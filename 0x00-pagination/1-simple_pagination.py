@@ -7,6 +7,7 @@ from typing import List
 
 
 def index_range(page, page_size):
+    """return a tuple containing two ints"""
     return (((page-1) * page_size), (page * page_size))
 
 
