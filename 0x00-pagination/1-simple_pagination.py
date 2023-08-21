@@ -31,9 +31,6 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
-        pass
-
-    def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """finds the correct indexes to paginate the dataset
         correctly and return the appropriate page of dataset"""
         assert type(page) == int and type(page_size) == int
