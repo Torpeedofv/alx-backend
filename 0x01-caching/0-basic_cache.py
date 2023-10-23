@@ -7,7 +7,7 @@ class BasicCache(BaseCaching):
     """Creation of a child class"""
     def put(self, key, item):
         """adds a new key and item to the cache"""
-        if key or item is None:
+        if key is None or item is None:
             return
         self.cache_data[key] = item
 
