@@ -17,9 +17,9 @@ class MRUCache(BaseCaching):
 
         if key not in self.cache_data and\
                 len(self.cache_data) >= self.MAX_ITEMS:
-            print("DISCARD:", self.history[3])
-            self.cache_data.pop(self.history[3])
-            del self.history[3]
+            print("DISCARD:", self.history[-1])
+            self.cache_data.pop(self.history[-1])
+            del self.history[-1]
         if key in self.history:
             del self.history[self.history.index(key)]
         self.history.append(key)
