@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://redis.io/
+HostUrl=https://codeload.github.com/redis/redis/tar.gz/refs/tags/7.2.3
