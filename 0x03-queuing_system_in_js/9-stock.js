@@ -53,7 +53,7 @@ async function getCurrentReservedStockById(itemId) {
 const notFound = { status: "Product not found" };
 
 app.get("/list_products/: itemId", async (req, res) => {
-	const itemId = Number(req.params.productId);
+	const itemId = Number(req.params.itemId);
 	const item = getItemById(itemId);
 	if (!item) {
 		return;
